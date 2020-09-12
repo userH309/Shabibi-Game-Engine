@@ -1,3 +1,5 @@
+// Tell VS Code how to build (compile) the program. 
+// This task will invoke the Clang C++ compiler to create an executable file from the source code.
 {
 	"version": "2.0.0",
 	"tasks": [
@@ -6,6 +8,8 @@
 			"label": "C/C++: clang++ build active file",
 			"command": "/usr/bin/clang++",
 			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
 				"-g",
 				"${file}",
 				"-o",
