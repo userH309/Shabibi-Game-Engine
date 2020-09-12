@@ -5,7 +5,7 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "C/C++: clang++ build active file",
+			"label": "Compile the program using Clang C++ compiler!",
 			"command": "/usr/bin/clang++",
 			"args": [
 				"-std=c++17",
@@ -24,6 +24,7 @@
 			],
 			"group": {
 				"kind": "build",
+				// Since default, we can run directly using hotkeys
 				"isDefault": true
 			}
 		}
