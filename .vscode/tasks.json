@@ -13,6 +13,7 @@
 				"-g",
 				"${file}",
 				"-o",
+				// Output the executable without showing extensions
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
 			"options": {
